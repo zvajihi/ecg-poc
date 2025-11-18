@@ -1,17 +1,96 @@
-# never track real data or PHI
-data/
-*.zip
-*.gz
-
-# python/build/cache
+# -------------------------------------------------------------------
+# PYTHON & VENV
+# -------------------------------------------------------------------
 __pycache__/
-*.pyc
-.env
-.venv/
-.ipynb_checkpoints/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+.eggs/
 dist/
 build/
+.env/
+.venv/
+venv/
+env/
+.pip/
 
-# OS/editor clutter
-.DS_Store
+# -------------------------------------------------------------------
+# PROJECT STRUCTURE: DATA
+# (Never commit raw or intermediate data)
+# -------------------------------------------------------------------
+data/raw/
+data/interim/
+data/derived/
+data/tmp/
+*.zip
+*.tar
+*.tar.gz
+*.parquet
+*.npz
+*.npy
+
+# Allow small sample raw files for development if needed:
+# !data/raw/sample/
+
+# -------------------------------------------------------------------
+# ML/AI ARTIFACTS (models, checkpoints, logs)
+# -------------------------------------------------------------------
+models/
+checkpoints/
+experiments/
+wandb/
+mlruns/
+runs/
+*.pt
+*.pth
+*.ckpt
+
+# -------------------------------------------------------------------
+# JUPYTER NOTEBOOKS
+# -------------------------------------------------------------------
+.ipynb_checkpoints/
+*.ipynb_convert/
+*.nbconvert/
+
+# -------------------------------------------------------------------
+# IDE / EDITOR FILES
+# -------------------------------------------------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# -------------------------------------------------------------------
+# OS / WINDOWS FILES
+# -------------------------------------------------------------------
 Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# -------------------------------------------------------------------
+# LOGS & TEMPORARY FILES
+# -------------------------------------------------------------------
+*.log
+*.tmp
+*.temp
+*.cache
+.cache/
+logs/
+
+# -------------------------------------------------------------------
+# CONFIG / CREDENTIALS (do NOT commit)
+# -------------------------------------------------------------------
+.env
+.env.*
+*.key
+*.pem
+
+# -------------------------------------------------------------------
+# MISC
+# -------------------------------------------------------------------
+.DS_Store
+*.bak
+*.swp
+*.lock

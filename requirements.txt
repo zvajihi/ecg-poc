@@ -1,0 +1,18 @@
+numpy
+pandas
+scipy
+matplotlib
+pyyaml
+scikit-learn
+joblib
+tqdm
+
+# Deep learning
+torch
+torchaudio
+
+# Optional: for visualizations/reports
+seaborn
+
+# Optional: for logging and config management
+rich

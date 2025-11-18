@@ -1,0 +1,9 @@
+[project]
+name = "ecg-poc"
+version = "0.1.0"
+description = "ECG proof-of-concept ML pipeline"
+requires-python = ">=3.10"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["ecg_poc"]

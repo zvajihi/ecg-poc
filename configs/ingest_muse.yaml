@@ -1,0 +1,4 @@
+paths:
+  raw_dir: "data/raw/muse"         # adjust if your MUSE data lives elsewhere
+  interim_dir: "data/interim"
+  manifest_name: "muse_manifest.parquet"

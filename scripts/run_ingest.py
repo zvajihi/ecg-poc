@@ -6,13 +6,13 @@ Created on Tue Nov 18 15:38:28 2025
 """
 
 from pathlib import Path
-
 from ecg_poc.data_ingest.ingest_ecg import ingest_muse
 
-
 def main():
-    # Default config path; can later be overridden by CLI args
-    config_path = Path("configs/ingest_muse.yaml")
+    # Always resolve paths relative to the project root
+    ROOT = Path(__file__).resolve().parents[1]
+    config_path = ROOT / "configs" / "ingest_muse.yaml"
+    
     manifest_path = ingest_muse(config_path)
     print(f"[main] Ingestion finished. Manifest saved at: {manifest_path}")
 

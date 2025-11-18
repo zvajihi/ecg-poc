@@ -1,0 +1,17 @@
+# never track real data or PHI
+data/
+*.zip
+*.gz
+
+# python/build/cache
+__pycache__/
+*.pyc
+.env
+.venv/
+.ipynb_checkpoints/
+dist/
+build/
+
+# OS/editor clutter
+.DS_Store
+Thumbs.db
